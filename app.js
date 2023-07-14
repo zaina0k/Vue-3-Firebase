@@ -10,6 +10,9 @@ const app = Vue.createApp({
   methods: {
     toggleShowBooks() {
       this.showBooks =  !this.showBooks
+    },
+    say(msg){
+      console.log(msg)
     }
   }
 })
