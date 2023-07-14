@@ -20,8 +20,14 @@
       <!-- Toggle books -->
       <span v-if="showBooks">Hide books</span>
       <span v-else>Show books</span>
-    </button><br><br>
-    <button v-on:click='say("hello world")'>hello world</button>
+    </button>
+
+    <div v-show="showBooks">
+      currently showing books
+    </div>
+
+    <p style="display: none;">the difference between the v if and v show options is that the v if manually inputs/inserts the tags/code into the DOM when the condition is true. with v-show the element is always present in the dom, the user just cant see it. v-show uses the style display attribute to change the tag. adding and removing from the dom is more time/resource consuming</p>
+
   </div>
 
   <script src="app.js"></script>
