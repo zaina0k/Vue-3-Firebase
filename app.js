@@ -2,9 +2,23 @@ const app = Vue.createApp({
   data() {
     return {
       showBooks: true,
-      title: 'The Way of Kings',
-      author: 'Brandon Sanderson',
-      age: 45,
+      books : [
+        {
+          title: "name of the wind",
+          author: "rothfuss",
+          age:30
+        },
+        {
+          title: "the way of kings",
+          author: "sanderson",
+          age:30
+        },
+        {
+          title: "the final empire",
+          author: "sanderson",
+          age:30
+        }
+      ],
       x: 0,
       y: 0,
     }
