@@ -21,7 +21,14 @@
   <div id="app">
     <a :href="url">hello world</a>
     <div v-if="showBooks">
-
+      <ul>
+        <li v-for="book in books">
+          <img src="" alt="book.title">
+          <h1>{{book.title}}</h1>
+          <p>{{book.author}}</p>
+        </li>
+      </ul>
+    </div>
     <div v-else>
       <p>Click the button below to show books</p>
     </div>
