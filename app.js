@@ -1,6 +1,7 @@
 const app = Vue.createApp({
   data() {
     return {
+      url: "https://google.com",
       showBooks: true,
       books: [
         { title: 'name of the wind', author: 'patrick rothfuss' },
