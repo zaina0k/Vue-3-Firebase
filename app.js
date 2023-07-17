@@ -13,6 +13,15 @@ const app = Vue.createApp({
     },
     say(msg){
       console.log(msg)
+    },
+    handleEvent(e,num){
+      //e is the event that can be used when an event occurs. e must be the first parameter
+      console.log(e)
+      console.log(num)
+    },
+    test(x){
+      console.log("test")
+      console.log(x)
     }
   }
 })

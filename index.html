@@ -4,6 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learning Vue</title>
   <script src="https://unpkg.com/vue@3.0.0"></script>
+  <style>
+    .Box{
+      padding: 100px 0;
+      width: 400px;
+      text-align: center;
+      background: #ddd;
+      margin: 20px;
+      display: inline-block;
+    }
+  </style>
 </head>
 <body>
   <h1>Hello, Vue :)</h1>
@@ -21,12 +31,25 @@
       <span v-if="showBooks">Hide books</span>
       <span v-else>Show books</span>
     </button>
+<br>
+    <button @click="test">test</button>
 
-    <div v-show="showBooks">
-      currently showing books
-    </div>
+    <br>
+    <!-- mouse events -->
+    <div class="Box" @mouseover="handleEvent($event,199)">1 mouse over</div>
+    <!-- <div class="Box" v-on:mouseover="handleEvent()">1 mouse over</div> -->
+
+    <div class="Box" @mouseleave="handleEvent">2 mouse leave</div>
+    <div class="Box" @dblclick="handleEvent">3 double click</div>
+    <div class="Box">4</div>
+
+    
+
+
 
     <p style="display: none;">the difference between the v if and v show options is that the v if manually inputs/inserts the tags/code into the DOM when the condition is true. with v-show the element is always present in the dom, the user just cant see it. v-show uses the style display attribute to change the tag. adding and removing from the dom is more time/resource consuming</p>
+
+
 
   </div>
 
